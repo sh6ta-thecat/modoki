@@ -1,0 +1,69 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.header{
+    display: inline-flex;
+    /* width: 100%; */
+    background: #242526;
+    /* display: inline; */
+}
+.botton{width: 100%;border-bottom: 2px dashed #0c0c0c;}
+
+.me{
+    padding: 5px;
+}
+
+.logo{
+    padding-right: 20px;
+    .icono{
+        & img{
+            width: 10pc;
+            background-color: transparent;
+        }
+    }
+}
+.buscare{
+    padding-top: 8px;
+    & form input{
+        border-radius: 50px;
+        padding: 10px;
+        width: 25pc;
+        background: #323333;
+        border: 0px solid #323333;
+    }
+    & form button{
+        background: #323333;
+        border: 0px solid #242526;
+        position: relative;
+        color: #fff;
+        right: 30px;
+    }
+}
+.ops{
+    
+}
+.icon {
+    & img{
+        width: 30px;
+        height: 30px;
+        filter: invert(118%)
+                sepia(100%)
+                saturate(20%)
+                hue-rotate(225deg)
+                brightness(102%)
+                contrast(120%);
+    }
+    & h1{
+        font-size: 15px;
+        color: #fff;
+        font-family: arial;
+    }
+    padding-top: 10px;
+    padding-left: 3pc;
+}
+.box{display: inline-flex;}
+ /* diseÃ±os especiales */
+.me{display: inline-flex;}
+input{color: #fff; font-size: 15px; font-family:Verdana, Geneva, Tahoma, sans-serif Arial;}
+input:focus{outline: none;}
