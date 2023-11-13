@@ -69,16 +69,34 @@ input{color: #fff; font-size: 15px; font-family:Verdana, Geneva, Tahoma, sans-se
 input:focus{outline: none;}
 
 
-@media screen and (max-width:900px ){
+@media screen and (max-width:600px ){
     .header{
         display: block;
         & .me{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    ;
+        padding: 0.1rem;
+    }
+    .logo{
+        padding-right: 20px;
+        .icono{
+            & img{
+                margin: 0px;
+                width: 114px;
+                height: 38px;
+            }
         }
     }
-    & svg{
-        width: 30px; height: 20px;
+    .icon{
+        display: inline-flex;
+        & svg{
+            width: 1.4rem; height: 1rem;
+        }
+        & h1{
+            font-size: 13px;
+        }
     }
 }
