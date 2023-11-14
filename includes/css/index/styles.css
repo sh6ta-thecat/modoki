@@ -1,0 +1,92 @@
+*{
+  font-family: tahoma;
+}
+body{
+  background: rgba(23, 23, 23, 1);
+}
+.logo{
+  margin-bottom: 1pc;
+  & h1{
+    color:#fff;
+  font-size: 80px;
+  }
+  & h2{
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+    rotate: 35deg;
+    top: -97px;
+    left: 14pc;
+  }
+}
+.busca{
+  margin-top: 5px;
+  margin-bottom: 7pc;
+  & input{
+    color: #fff;
+  font-size: 15px;
+  height: 36px;
+  padding: 10px;
+  width: 642px;
+  position: relative;
+  left: 40px;
+  border: 0px;
+  background: #3a3939;
+  border-radius: 20px;
+  }
+  & input:focus{
+    outline: none;
+  }
+   & button{
+    position: relative;
+  left: -7px;
+  top: 8px;
+  background: transparent;
+  border: 0px transparent;
+    & img{
+      fill: red;
+  width: 25px;
+    }
+   }
+}
+.body{
+  margin-top: 8pc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.messa{
+  background: #3a3939;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  height: 7pc;
+  width: 20pc;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  & a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4884e6;
+    text-decoration: none;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; 
+  z-index: 1000;
+}
+.ventana{
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  background: #242526;
+  padding: 20px;
+  margin: 0 auto;
+}
