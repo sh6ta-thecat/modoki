@@ -1,8 +1,40 @@
-<html>
-  <head>
-    <title>Modoki</title>
-  </head>
-  <body>
-    <a href="search">buscar</a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index/styles.css">
+</head>
+<body>
+    <div class="body">
+        <div class="logo">
+            <h1>Modoki</h1>
+            <h2>Jugando a la imitación</h2>
+        </div>
+        <div class="busca">
+            <form action="" method="get">
+                <input type="text" placeholder="Buscar algo en Modoki">
+                <button><img src="lupa.svg" alt=""></button>
+            </form>
+        </div>
+        <div class="messa">
+            Hasta el momento Modoki solo tiene 4 busquedas, que son gato(gatito, gata, minino), cuevana(cuevana3), modoki, y la wea resplandeciente, y ciertas paginas como youtube, google y otras que no aceptan iframe no estan.
+            <a href="#" id="abrirModal">¿por que?</a>
+            <div class="modal" id="modal"> <!-- Agregar el ID "modal" aquí -->
+                <div class="ventana">
+                    <h2>¿Por que solo hay 4 busquedas?</h2>
+                    <p>El hecho de que Modoki solo tenga cuatro opciones de búsqueda se debe a que se está utilizando una base de datos que no permite almacenar una gran cantidad de archivos y datos.
+                        <br>
+                        El servidor de Modoki se encuentra alojado en una página que  no permite almacenar una gran cantidad de archivos y datos, por eso nos limitamos a 40 resultados, 10 por cada opción de búsqueda.
+                <br>
+
+            </p>
+                    <div class="cerrar"><button>cerrar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="includes/js/modal.js"></script>
+</body>
 </html>
