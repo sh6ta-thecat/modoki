@@ -1,102 +1,109 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
-.header{
-    display: inline-flex;
-    /* width: 100%; */
-    background: #242526;
-    /* display: inline; */
-}
-.botton{width: 100%;border-bottom: 2px dashed #0c0c0c;}
 
-.me{
+.header {
+    display: inline-flex;
+    background: #242526;
+    padding: 0.4rem;
+}
+
+.botton {
+    width: 100%;
+    border-bottom: 2px dashed #0c0c0c;
+}
+
+.me {
     padding: 5px;
 }
 
-.logo{
+.logo {
     padding-right: 20px;
-    .icono{
-        & img{
-            width: 10pc;
-            background-color: transparent;
-        }
-    }
 }
-.buscare{
+
+.logo .icono img {
+    width: 10pc;
+    background-color: transparent;
+}
+.buscare {
     padding-top: 8px;
-    & form input{
-        border-radius: 50px;
-        padding: 10px;
-        width: 25pc;
-        background: #323333;
-        border: 0px solid #323333;
-    }
-    & form button{
-        background: #323333;
-        border: 0px solid #242526;
-        position: relative;
-        color: #fff;
-        right: 30px;
-    }
 }
-.ops{
-    
+
+.buscare form input {
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 50px;
+    padding: 10px;
+    width: 25pc;
+    background: #323333;
+    border: 0px solid #323333;
 }
+
+.buscare form button {
+    background: #323333;
+    border: 0px solid #242526;
+    position: relative;
+    color: #fff;
+    right: 30px;
+}
+
+.ops {}
+
 .icon {
-    & svg{
-        width: 40px; height: 30px;
-    }
-    & h1{
-        font-size: 15px;
-        color: #fff;
-        font-family: arial;
-    }
+    display: inline-flex;
     padding-top: 10px;
     padding-left: 3pc;
 }
-header{
+
+.icon svg {
+    width: 40px;
+    height: 30px;
+}
+
+.icon h1 {
+    font-size: 15px;
+    color: #fff;
+    font-family: arial;
+}
+
+header {
     position: fixed;
     top: 0;
-    width:100%;
-
+    width: 100%;
 }
-.header{padding:0.4rem}
-.box{display: inline-flex;}
- /* diseños especiales */
-.me{display: inline-flex;}
-input{color: #fff; font-size: 15px; font-family:Verdana, Geneva, Tahoma, sans-serif Arial;}
-input:focus{outline: none;}
-
-
-@media screen and (max-width:600px ){
-    .header{
+input{color: #fff;}
+@media screen and (max-width: 800px) {
+    .header.botton {
+        display: block; /* Centra el contenido en pantallas pequeñas */
+    }
+}
+/* Media Query para pantallas con ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+    .header {
         display: block;
-        & .me{
+        text-align: center; /* Centra el contenido en pantallas pequeñas */
+    }
+
+    .me {
         display: flex;
         flex-direction: column;
         align-items: center;
-        }
-    ;
-        padding: 0.1rem;
     }
-    .logo{
-        padding-right: 20px;
-        .icono{
-            & img{
-                margin: 0px;
-                width: 114px;
-                height: 38px;
-            }
-        }
+
+    .logo .icono img {
+        margin: 0px;
+        width: 114px;
+        height: 38px;
     }
-    .icon{
-        display: inline-flex;
-        & svg{
-            width: 1.4rem; height: 1rem;
-        }
-        & h1{
-            font-size: 13px;
-        }
+
+    .icon svg {
+        width: 1.4rem;
+        height: 1rem;
+    }
+
+    .icon h1 {
+        font-size: 13px;
     }
 }
+
