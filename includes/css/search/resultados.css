@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
   }
-
+body{
+    background: #212124;
+}
   main{
     padding-top: 6pc;
   }
@@ -35,7 +37,7 @@
 }
 .link-accesso a{
     text-decoration: none;
-    color: #646664;
+    color: #969996;
     font-family: arial;
     font-size: 15px;
     font-weight: bold;
@@ -46,6 +48,7 @@
     font-weight: 500;
     font-family: tahoma;
     font-weight: bold;
+    color:rgb(101, 101, 212);
  }
  
  .dados-resultados h2 a:hover{
@@ -60,9 +63,45 @@
  .muestra-resultados{
     width: 50%;
  }
-
- @media screen and (min-width:500px),(max-width:900px ){
+ @media screen and (max-width: 800px) {
     main{
         padding-top: 10.3pc;
     }
+    .container{
+        padding: 0;
+        & >p{
+         padding-left:20px;
+        }
+    }
+    .container p{
+        font-family: tahoma;
+        color: #f5f5f5;
+        font-weight: bold;
+        width: 100%;
+    }
+    .area-resultados{
+        width: 100%;
+    }
+}
+
+ @media screen and (max-width:600px ){
+    main{
+        padding-top: 10.3pc;
+    }
+    .container{
+        padding: 0;
+        & >p{
+         padding-left:20px;
+        }
+    }
+    .container p{
+        font-family: tahoma;
+        color: #f5f5f5;
+        font-weight: bold;
+        width: 100%;
+    }
+    .area-resultados{
+        width: 100%;
+    }
  }
+
