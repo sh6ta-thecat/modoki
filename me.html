@@ -1,0 +1,55 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buscador</title>
+    </head>
+    <body>
+        <h1>Buscador</h1>
+        <form action="" method="get">
+            <input type="text" name="search">
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="results"></div>
+    
+        <script>
+            // Obtener el parámetro de búsqueda de la URL
+            const params = new URLSearchParams(window.location.search);
+            const searchTerm = params.get('search');
+        
+            if (searchTerm) {
+                console.log('Término de búsqueda:', searchTerm); // Verificar el término de búsqueda
+        
+                var url = 'http://modoki.000webhostapp.com/index.php?search=' + encodeURIComponent(searchTerm);
+                console.log('URL de la API:', url); // Verificar la URL de la API
+        
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Error al cargar los resultados');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('Datos recibidos:', data); // Verificar los datos recibidos
+        
+                        var resultadosDiv = document.getElementById('results');
+                        resultadosDiv.innerHTML = '';
+        
+                        data.forEach(row => {
+                            resultadosDiv.innerHTML += '<p>campo 1: ' + row['url'] + '</p>';
+                            resultadosDiv.innerHTML += '<p>campo 2: ' + row['contenido'] + '</p>';
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            } else {
+                console.log('No se ha proporcionado un término de búsqueda');
+            }
+        </script>
+        
+    </body>
+    </html>
