@@ -19,7 +19,7 @@
           </div>
           <div class="buscare">
               <form action="" method="get">
-                  <input type="text" name="q" required oninvalid="setCustomValidity('Ingrese un termino de busqueda')" />
+                  <input id="search-input" type="text" name="q" required oninvalid="setCustomValidity('Ingrese un termino de busqueda')" />
                   <button type="submit">p</button>
               </form>
           </div>
@@ -39,7 +39,7 @@
    </header>
     <main>
     <div class="container">
-      <p>Resultados de ###</p>
+      <p id="search-header"></p>
         <div class="area-resultados">
           <div class="resultados">
             <div class="paret">
@@ -156,5 +156,6 @@
       <div class="muestra-resultados"></div>
     </div>
   </main>
+  <script src="includes/js/results_input.js"></script>
 </body>
 </html>
