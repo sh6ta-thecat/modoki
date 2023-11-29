@@ -62,6 +62,9 @@ body{
 
  .muestra-resultados{
     width: 50%;
+    display: flex;
+    justify-content: space-around;
+    /* width: 100px; */
  }
  @media screen and (max-width: 800px) {
     main{
