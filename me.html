@@ -39,7 +39,7 @@
                         resultadosDiv.innerHTML = '';
         
                         data.forEach(row => {
-                            resultadosDiv.innerHTML += '<p>campo 1: ' + row['url'] + '</p>';
+                            resultadosDiv.innerHTML += '<a href="' + row['url'] + '"><p>campo 1: ' + row['url'] + '</p></a>';
                             resultadosDiv.innerHTML += '<p>campo 2: ' + row['contenido'] + '</p>';
                         });
                     })
